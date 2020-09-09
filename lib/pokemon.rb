@@ -25,6 +25,7 @@ class Pokemon
     SELECT * FROM pokemon WHERE id = ?;
     SQL
     
-    db.execute(sql, )
+    found_pokemon = db.execute(sql, id).flatten
+    
   end 
 end 
