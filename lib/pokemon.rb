@@ -16,6 +16,7 @@ class Pokemon
     
     db.execute(sql, [name, type
   end 
+end 
   
   def self.find(id, db)
     found_pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?;", id).flatten
